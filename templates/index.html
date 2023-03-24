@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Movies4You</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <link href="{{url_for('static',filename='assets/img/logo.jpg')}}" rel="icon">
+ 
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  
+  <link href="{{url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!--Main CSS File-->
+  <link href="{{url_for('static',filename='assets/css/main.css')}}" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!--Header-->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        
+        <h1>Movies4You<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#">Sign in</a></li>
+          <li class="dropdown"><a href="#"><span>City</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Delhi</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Hyderabad</a></li>
+              <li><a href="#">Kolkata</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn-booking" href="booking">Book a Show</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header>
+
+  <!--Hero Section-->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+    <div class="swiper-slide">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">Endless Entertainment<br>Just a click away.</h2>
+          <h1>Tu Jhoothi Main Makkaar</h1>
+          <p data-aos="fade-up" data-aos-delay="100">2h 39m
+            •
+            Comedy
+            ,
+            Romantic
+            •
+            UA
+            •
+            8 Mar, 2023</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="booking" class="btn-booking">Book a Show</a>
+            <a href="https://www.youtube.com/watch?v=Cx_Dtwn4ayw" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Trailer</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 text-center text-lg-start">
+          <img src="{{url_for('static',filename='assets/img/movie1.jpg')}}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div><div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="container">
+      <div class="row justify-content-between gy-5">
+    <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+      <h2 data-aos="fade-up">Endless Entertainment<br>Just a click away.</h2>
+      <h1>Pathaan</h1>
+      <p data-aos="fade-up" data-aos-delay="100">2h 26m
+        •
+        Action
+        ,
+        Thriller
+        •
+        UA
+        •
+        25 Jan, 2023</p>
+      <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+        <a href="booking" class="btn-booking">Book a Show</a>
+        <a href="https://www.youtube.com/watch?v=vqu4z34wENw" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Trailer</span></a>
+      </div>
+    </div>
+    <div class="col-lg-6 order-1 order-lg-2 text-center text-lg-start">
+      <img src="{{url_for('static',filename='assets/img/movie2.jpg')}}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+    </div>
+  </div><div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="swiper-slide">
+  <div class="container">
+  <div class="row justify-content-between gy-5">
+<div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+  <h2 data-aos="fade-up">Endless Entertainment<br>Just a click away.</h2>
+  <h1>John Wick: Chapter 4</h1>
+  <p data-aos="fade-up" data-aos-delay="100">2h 51m
+    •
+    Action
+    ,
+    Thriller
+    •
+    A
+    •
+    24 Mar, 2023</p>
+  <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+    <a href="booking" class="btn-booking">Book a Show</a>
+    <a href="https://www.youtube.com/watch?v=qEVUtrk8_B4" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Trailer</span></a>
+  </div>
+</div>
+<div class="col-lg-6 order-1 order-lg-2 text-center text-lg-start">
+  <img src="{{url_for('static',filename='assets/img/movie3.jpg')}}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+</div>
+</div><div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="swiper-slide">
+  <div class="container">
+  <div class="row justify-content-between gy-5">
+<div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+  <h2 data-aos="fade-up">Endless Entertainment<br>Just a click away.</h2>
+  <h1>Shazam! Fury of the Gods</h1>
+  <p data-aos="fade-up" data-aos-delay="100">2h 10m
+    •
+    Action
+    ,
+    Adventure
+    ,
+    Fantasy
+    •
+    UA
+    •
+    17 Mar, 2023</p>
+  <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+    <a href="booking" class="btn-booking">Book a Show</a>
+    <a href="https://www.youtube.com/watch?v=AIc671o9yCI" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Trailer</span></a>
+  </div>
+</div>
+<div class="col-lg-6 order-1 order-lg-2 text-center text-lg-start">
+  <img src="{{url_for('static',filename='assets/img/movie4.jpeg')}}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+</div>
+</div><div class="swiper-pagination"></div>
+</div>
+</div>
+</div>
+</div>
+
+  </section>
+  
+  <main id="main">
+
+    <!--Events Section-->
+    <section id="events" class="events">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Events</h2>
+          <p>The <span>best of all the Events</span> are here</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(static/assets/img/event1.jpg)">
+              <h3 style="border-bottom: 1px solid white; color: white;">Movies</h3>
+              
+              <p class="description">
+                Stay entertained all the time! Book tickets for movies only on Movies4You.Whatever be your choice in movies, Movies4You is the Go-to destination!
+
+              </p>
+            </div>
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(static/assets/img/event2.jpg)">
+              <h3 style="border-bottom: 1px solid white; color: white;">Sports</h3>
+
+              
+              <p class="description">
+                The website caters to ticket sales for a number of sporting events. 
+              </p>
+            </div>
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(static/assets/img/event3.jpg)">
+              <h3 style="border-bottom: 1px solid white; color: white;">Events Happening near you</h3>
+              
+              <p class="description">
+                Book tickets for best upcoming events. Explore music, comedy, workshops, online events near you on Movies4You.
+              </p>
+            </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Need Help? <span>Contact Us</span></p>
+        </div>
+
+        <div class="mb-3">
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.852138793896!2d77.4780874!3d12.9100974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15a006e15e11%3A0xa3427875cea82218!2sJSS%20Academy%20Of%20Technical%20Education!5e0!3m2!1sen!2sin!4v1673089987579!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>Our Address</h3>
+                <p>Kengeri, Srinivaspura, Bangalore-560060, Karnataka</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>contact@movies4you.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91 6299 1886 94</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-xl-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+
+    <div class="container mx-auto">
+      <div class="col-lg-3 col-md-6 footer-links mx-auto">
+          <h4>Follow Us:-</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter "><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook " ><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram "><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin "><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+    </div>
+
+     <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Movies4You</span></strong>. All Rights Reserved
+      </div>
+     </div>
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Main JS File-->
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+
+</body>
+
+</html>
